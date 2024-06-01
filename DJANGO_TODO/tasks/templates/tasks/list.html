@@ -8,7 +8,8 @@
 <div>
     <ul>
         <li>{{task}}</li>
-        <a href="{% url 'update' task.id %}">Update</a>
+        <a href="{% url 'update' task.pk %}">Update</a>
+        <a href="{% url 'delete' task.pk %}">Delete</a>
     </ul>
 </div>
 {% endfor %}
