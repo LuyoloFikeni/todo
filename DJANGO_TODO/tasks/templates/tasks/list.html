@@ -7,7 +7,8 @@
 {% for task in tasks %}
 <div>
     <ul>
-        <li>{{ task }}</li>
+        <li>{{task}}</li>
+        <a href="{% url 'update' task.id %}">Update</a>
     </ul>
 </div>
 {% endfor %}
